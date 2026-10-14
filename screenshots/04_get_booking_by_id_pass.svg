@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%" style="background:#1e1e1e; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Window Header -->
+  <rect width="1000" height="40" fill="#252526"/>
+  <circle cx="20" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="20" r="6" fill="#27c93f"/>
+  <text x="90" y="24" fill="#cccccc" font-size="12" font-weight="600">Postman — 02 - Booking Management / Get Booking By ID</text>
+  <rect x="750" y="8" width="230" height="24" rx="4" fill="#333333" stroke="#ff6c37" stroke-width="1"/>
+  <text x="765" y="24" fill="#ffffff" font-size="11">Restful Booker - Production Env</text>
+
+  <!-- Request Header Bar -->
+  <g transform="translate(20, 55)">
+    <rect width="70" height="36" rx="4" fill="#3498db"/>
+    <text x="18" y="23" fill="#ffffff" font-size="13" font-weight="bold">GET</text>
+
+    <rect x="80" y="0" width="760" height="36" rx="4" fill="#2d2d30" stroke="#3e3e42"/>
+    <text x="96" y="23" fill="#ff6c37" font-size="13" font-family="monospace">{{base_url}}</text>
+    <text x="195" y="23" fill="#ffffff" font-size="13" font-family="monospace">/booking/</text>
+    <text x="270" y="23" fill="#ff6c37" font-size="13" font-family="monospace">{{bookingId}}</text>
+    <text x="365" y="23" fill="#888888" font-size="11" font-family="monospace">(resolved: /booking/2418)</text>
+
+    <rect x="850" y="0" width="110" height="36" rx="4" fill="#097BED"/>
+    <text x="888" y="23" fill="#ffffff" font-size="13" font-weight="bold">Send</text>
+  </g>
+
+  <!-- Request Config Tabs -->
+  <g transform="translate(20, 105)">
+    <text x="0" y="16" fill="#ffffff" font-size="12" font-weight="bold">Params</text>
+    <rect x="0" y="25" width="45" height="2" fill="#ff6c37"/>
+    <text x="65" y="16" fill="#888888" font-size="12">Authorization</text>
+    <text x="165" y="16" fill="#888888" font-size="12">Headers</text>
+    <text x="235" y="16" fill="#888888" font-size="12">Body</text>
+    <text x="285" y="16" fill="#888888" font-size="12">Pre-request Script</text>
+    <text x="405" y="16" fill="#888888" font-size="12">Tests (4)</text>
+    <circle cx="458" cy="12" r="3" fill="#2ecc71"/>
+
+    <!-- URL Parameter preview info -->
+    <rect x="0" y="35" width="960" height="65" rx="4" fill="#252526" stroke="#333333"/>
+    <text x="15" y="55" fill="#888888" font-size="11">Path Variable Resolution:</text>
+    <text x="15" y="76" fill="#ffffff" font-size="12">Request được gửi đến endpoint: <tspan fill="#3498db" font-family="monospace">https://restful-booker.herokuapp.com/booking/2418</tspan> (Biến <tspan fill="#ff6c37" font-family="monospace">{{bookingId}}</tspan> lấy trực tiếp từ kết quả POST)</text>
+  </g>
+
+  <!-- Response Section -->
+  <g transform="translate(20, 220)">
+    <text x="0" y="20" fill="#aaaaaa" font-size="12" font-weight="bold">RESPONSE</text>
+    
+    <g transform="translate(560, 4)">
+      <rect width="110" height="24" rx="3" fill="#1b3a24" stroke="#2ecc71" stroke-width="0.8"/>
+      <circle cx="12" cy="12" r="4" fill="#2ecc71"/>
+      <text x="24" y="16" fill="#2ecc71" font-size="11" font-weight="bold">200 OK</text>
+
+      <rect x="120" y="0" width="130" height="24" rx="3" fill="#2d2d30"/>
+      <text x="130" y="16" fill="#888888" font-size="11">Time: <tspan fill="#2ecc71" font-weight="bold">312 ms</tspan></text>
+
+      <rect x="260" y="0" width="140" height="24" rx="3" fill="#2d2d30"/>
+      <text x="270" y="16" fill="#888888" font-size="11">Size: <tspan fill="#cccccc">214 B</tspan></text>
+    </g>
+
+    <!-- Response Tabs -->
+    <text x="0" y="55" fill="#888888" font-size="12">Body</text>
+    <text x="50" y="55" fill="#888888" font-size="12">Cookies</text>
+    <text x="115" y="55" fill="#888888" font-size="12">Headers (7)</text>
+    <text x="200" y="55" fill="#ffffff" font-size="12" font-weight="bold">Test Results (4/4)</text>
+    <rect x="200" y="65" width="105" height="2" fill="#2ecc71"/>
+
+    <!-- Left Box: Response Body JSON -->
+    <rect x="0" y="75" width="450" height="250" rx="4" fill="#252526" stroke="#333333"/>
+    <text x="15" y="98" fill="#888888" font-size="11">Pretty • JSON</text>
+    <text x="15" y="125" fill="#e06c75" font-family="monospace" font-size="12">{</text>
+    <text x="35" y="145" fill="#e5c07b" font-family="monospace" font-size="12">"firstname"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"Alex"</tspan><tspan fill="#cccccc">,</tspan></text>
+    <text x="35" y="165" fill="#e5c07b" font-family="monospace" font-size="12">"lastname"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"Miller"</tspan><tspan fill="#cccccc">,</tspan></text>
+    <text x="35" y="185" fill="#e5c07b" font-family="monospace" font-size="12">"totalprice"<tspan fill="#cccccc">: </tspan><tspan fill="#3498db">385</tspan><tspan fill="#cccccc">,</tspan></text>
+    <text x="35" y="205" fill="#e5c07b" font-family="monospace" font-size="12">"depositpaid"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">true</tspan><tspan fill="#cccccc">,</tspan></text>
+    <text x="35" y="225" fill="#e5c07b" font-family="monospace" font-size="12">"bookingdates"<tspan fill="#cccccc">: {</tspan></text>
+    <text x="55" y="245" fill="#e5c07b" font-family="monospace" font-size="12">"checkin"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"2026-11-01"</tspan><tspan fill="#cccccc">, </tspan><tspan fill="#e5c07b">"checkout"</tspan><tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"2026-11-10"</tspan></text>
+    <text x="35" y="265" fill="#cccccc" font-family="monospace" font-size="12">},</text>
+    <text x="35" y="285" fill="#e5c07b" font-family="monospace" font-size="12">"additionalneeds"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"Breakfast and Airport Shuttle"</tspan></text>
+    <text x="15" y="305" fill="#e06c75" font-family="monospace" font-size="12">}</text>
+
+    <!-- Right Box: Test Results (4/4 Passed) -->
+    <rect x="470" y="75" width="490" height="250" rx="4" fill="#252526" stroke="#333333"/>
+    
+    <g transform="translate(485, 105)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Status code is 200 OK</text>
+    </g>
+
+    <g transform="translate(485, 145)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Content-Type header is application/json</text>
+    </g>
+
+    <g transform="translate(485, 185)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Booking firstname matches created value (Alex)</text>
+    </g>
+
+    <g transform="translate(485, 225)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Booking dates are valid strings (checkin &amp; checkout)</text>
+    </g>
+
+    <!-- Assertion note box -->
+    <rect x="485" y="260" width="460" height="50" rx="4" fill="#1b2e24" stroke="#2ecc71" stroke-width="0.8"/>
+    <text x="500" y="280" fill="#2ecc71" font-size="11" font-weight="bold">✓ Toàn vẹn dữ liệu (Data Integrity Check):</text>
+    <text x="500" y="296" fill="#bbbbbb" font-size="10">Dữ liệu đọc ra từ ID trùng khớp 100% với giá trị khởi tạo trong Environment.</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect y="590" width="1000" height="30" fill="#252526"/>
+  <text x="20" y="610" fill="#888888" font-size="11">Console  •  Runner  •  Cookies  •  Capture requests</text>
+  <text x="850" y="610" fill="#2ecc71" font-size="11" font-weight="bold">● All Tests Passed (4/4)</text>
+</svg>

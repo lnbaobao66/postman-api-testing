@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%" style="background:#1e1e1e; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Window Header -->
+  <rect width="1000" height="40" fill="#252526"/>
+  <circle cx="20" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="20" r="6" fill="#27c93f"/>
+  <text x="90" y="24" fill="#cccccc" font-size="12" font-weight="600">Postman — 01 - Authentication / Create Auth Token</text>
+  <rect x="750" y="8" width="230" height="24" rx="4" fill="#333333" stroke="#ff6c37" stroke-width="1"/>
+  <text x="765" y="24" fill="#ffffff" font-size="11">Restful Booker - Production Env</text>
+
+  <!-- Request Header Bar -->
+  <g transform="translate(20, 55)">
+    <!-- Method Badge -->
+    <rect width="70" height="36" rx="4" fill="#2ecc71"/>
+    <text x="14" y="23" fill="#ffffff" font-size="13" font-weight="bold">POST</text>
+
+    <!-- URL Bar -->
+    <rect x="80" y="0" width="760" height="36" rx="4" fill="#2d2d30" stroke="#3e3e42"/>
+    <text x="96" y="23" fill="#ff6c37" font-size="13" font-family="monospace">{{base_url}}</text>
+    <text x="195" y="23" fill="#ffffff" font-size="13" font-family="monospace">/auth</text>
+
+    <!-- Send Button -->
+    <rect x="850" y="0" width="110" height="36" rx="4" fill="#097BED"/>
+    <text x="888" y="23" fill="#ffffff" font-size="13" font-weight="bold">Send</text>
+  </g>
+
+  <!-- Request Configuration Tabs -->
+  <g transform="translate(20, 105)">
+    <text x="0" y="16" fill="#888888" font-size="12">Params</text>
+    <text x="65" y="16" fill="#888888" font-size="12">Authorization</text>
+    <text x="165" y="16" fill="#888888" font-size="12">Headers (1)</text>
+    <text x="250" y="16" fill="#ffffff" font-size="12" font-weight="bold">Body</text>
+    <circle cx="285" cy="12" r="3" fill="#ff6c37"/>
+    <rect x="250" y="25" width="40" height="2" fill="#ff6c37"/>
+    <text x="310" y="16" fill="#888888" font-size="12">Pre-request Script</text>
+    <text x="430" y="16" fill="#888888" font-size="12">Tests (3)</text>
+    <circle cx="483" cy="12" r="3" fill="#2ecc71"/>
+
+    <!-- Request Body Area -->
+    <rect x="0" y="35" width="960" height="95" rx="4" fill="#252526" stroke="#333333"/>
+    <text x="15" y="55" fill="#888888" font-size="11">raw  •  JSON</text>
+    <text x="15" y="80" fill="#e06c75" font-family="monospace" font-size="12">{</text>
+    <text x="35" y="98" fill="#e5c07b" font-family="monospace" font-size="12">"username"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"admin"</tspan><tspan fill="#cccccc">, </tspan><tspan fill="#e5c07b">"password"</tspan><tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"password123"</tspan></text>
+    <text x="15" y="116" fill="#e06c75" font-family="monospace" font-size="12">}</text>
+  </g>
+
+  <!-- Response Section Divider -->
+  <g transform="translate(20, 250)">
+    <!-- Status & Metrics Bar -->
+    <text x="0" y="20" fill="#aaaaaa" font-size="12" font-weight="bold">RESPONSE</text>
+    
+    <g transform="translate(560, 4)">
+      <rect width="110" height="24" rx="3" fill="#1b3a24" stroke="#2ecc71" stroke-width="0.8"/>
+      <circle cx="12" cy="12" r="4" fill="#2ecc71"/>
+      <text x="24" y="16" fill="#2ecc71" font-size="11" font-weight="bold">200 OK</text>
+
+      <rect x="120" y="0" width="130" height="24" rx="3" fill="#2d2d30"/>
+      <text x="130" y="16" fill="#888888" font-size="11">Time: <tspan fill="#2ecc71" font-weight="bold">412 ms</tspan></text>
+
+      <rect x="260" y="0" width="140" height="24" rx="3" fill="#2d2d30"/>
+      <text x="270" y="16" fill="#888888" font-size="11">Size: <tspan fill="#cccccc">180 B</tspan></text>
+    </g>
+
+    <!-- Response Tabs -->
+    <text x="0" y="55" fill="#888888" font-size="12">Body</text>
+    <text x="50" y="55" fill="#888888" font-size="12">Cookies</text>
+    <text x="115" y="55" fill="#888888" font-size="12">Headers (7)</text>
+    <text x="200" y="55" fill="#ffffff" font-size="12" font-weight="bold">Test Results (3/3)</text>
+    <rect x="200" y="65" width="105" height="2" fill="#2ecc71"/>
+
+    <!-- Left Box: Response Body JSON -->
+    <rect x="0" y="75" width="450" height="200" rx="4" fill="#252526" stroke="#333333"/>
+    <text x="15" y="98" fill="#888888" font-size="11">Pretty • JSON</text>
+    <text x="15" y="130" fill="#e06c75" font-family="monospace" font-size="13">{</text>
+    <text x="35" y="155" fill="#e5c07b" font-family="monospace" font-size="13">"token"<tspan fill="#cccccc">: </tspan><tspan fill="#98c379">"7d9b9a65fe0128a"</tspan></text>
+    <text x="15" y="180" fill="#e06c75" font-family="monospace" font-size="13">}</text>
+    
+    <rect x="15" y="210" width="420" height="48" rx="4" fill="#1e282d" stroke="#007acc" stroke-width="0.8"/>
+    <text x="25" y="228" fill="#3498db" font-size="11" font-weight="bold">⚡ Chaining Trigger:</text>
+    <text x="25" y="246" fill="#cccccc" font-size="10" font-family="monospace">pm.environment.set("token", jsonData.token); -> SUCCESS</text>
+
+    <!-- Right Box: Test Results Passed (3/3) -->
+    <rect x="470" y="75" width="490" height="200" rx="4" fill="#252526" stroke="#333333"/>
+    
+    <!-- Test item 1 -->
+    <g transform="translate(485, 100)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Status code is 200 OK</text>
+    </g>
+
+    <!-- Test item 2 -->
+    <g transform="translate(485, 135)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Response time is less than 2000ms (412ms)</text>
+    </g>
+
+    <!-- Test item 3 -->
+    <g transform="translate(485, 170)">
+      <rect width="45" height="20" rx="3" fill="#2ecc71"/>
+      <text x="8" y="14" fill="#ffffff" font-size="10" font-weight="bold">PASS</text>
+      <text x="56" y="14" fill="#ffffff" font-size="12">Response contains a valid auth token</text>
+    </g>
+
+    <!-- Postman Console Output snippet -->
+    <rect x="485" y="210" width="460" height="50" rx="4" fill="#1b1d21"/>
+    <text x="500" y="228" fill="#888888" font-size="10" font-family="monospace">> Postman Console:</text>
+    <text x="500" y="246" fill="#2ecc71" font-size="10" font-family="monospace">Saved Auth Token to Environment: 7d9b9a65fe0128a</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect y="590" width="1000" height="30" fill="#252526"/>
+  <text x="20" y="610" fill="#888888" font-size="11">Console  •  Runner  •  Cookies  •  Capture requests</text>
+  <text x="850" y="610" fill="#2ecc71" font-size="11" font-weight="bold">● All Tests Passed (3/3)</text>
+</svg>

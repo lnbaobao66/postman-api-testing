@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%" style="background:#1e1e1e; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#252526" />
+      <stop offset="100%" stop-color="#2d2d30" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Window Header -->
+  <rect width="1000" height="40" fill="url(#headerGrad)"/>
+  <circle cx="20" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="20" r="6" fill="#27c93f"/>
+  
+  <!-- Postman Logo & Workspace name -->
+  <g transform="translate(90, 11)">
+    <circle cx="9" cy="9" r="9" fill="#FF6C37"/>
+    <path d="M5,11 L9,5 L13,11 Z" fill="#ffffff"/>
+  </g>
+  <text x="115" y="24" fill="#cccccc" font-size="12" font-weight="600">Postman — My Workspace / Restful Booker Environment Configuration</text>
+
+  <!-- Environment Selector on Top Right -->
+  <g transform="translate(730, 8)">
+    <rect width="250" height="24" rx="4" fill="#333333" stroke="#ff6c37" stroke-width="1.2"/>
+    <circle cx="14" cy="12" r="4" fill="#2ecc71"/>
+    <text x="26" y="16" fill="#ffffff" font-size="11" font-weight="500">Restful Booker - Production Env</text>
+    <path d="M232,10 L237,15 L242,10 Z" fill="#aaaaaa"/>
+  </g>
+
+  <!-- Main Container -->
+  <!-- Left Sidebar (Collections Tree) -->
+  <rect x="0" y="40" width="260" height="560" fill="#252526"/>
+  <rect x="0" y="40" width="260" height="36" fill="#2d2d30"/>
+  <text x="16" y="63" fill="#ffffff" font-size="12" font-weight="bold">COLLECTIONS</text>
+  <text x="225" y="63" fill="#ff6c37" font-size="16" font-weight="bold">+</text>
+
+  <!-- Collection item -->
+  <g transform="translate(16, 90)">
+    <path d="M0,4 L4,8 L8,4 Z" fill="#ff6c37"/>
+    <text x="16" y="7" fill="#ffffff" font-size="12" font-weight="600">Restful Booker - Codemify Suite</text>
+    <rect x="200" y="-4" width="24" height="14" rx="3" fill="#ff6c37" fill-opacity="0.2"/>
+    <text x="205" y="7" fill="#ff6c37" font-size="9" font-weight="bold">9</text>
+  </g>
+
+  <!-- Sub folders -->
+  <g transform="translate(32, 120)">
+    <text x="0" y="0" fill="#888888" font-size="11">📁 01 - Authentication</text>
+    <text x="18" y="20" fill="#2ecc71" font-size="10" font-weight="bold">POST</text>
+    <text x="54" y="20" fill="#cccccc" font-size="11">Create Auth Token</text>
+
+    <text x="0" y="48" fill="#888888" font-size="11">📁 02 - Booking Management (CRUD)</text>
+    <text x="18" y="68" fill="#3498db" font-size="10" font-weight="bold">GET</text>
+    <text x="54" y="68" fill="#cccccc" font-size="11">Get All Bookings</text>
+    <text x="18" y="88" fill="#2ecc71" font-size="10" font-weight="bold">POST</text>
+    <text x="54" y="88" fill="#cccccc" font-size="11">Create New Booking</text>
+    <text x="18" y="108" fill="#3498db" font-size="10" font-weight="bold">GET</text>
+    <text x="54" y="108" fill="#cccccc" font-size="11">Get Booking By ID</text>
+    <text x="18" y="128" fill="#f39c12" font-size="10" font-weight="bold">PUT</text>
+    <text x="54" y="128" fill="#cccccc" font-size="11">Update Booking (Full)</text>
+    <text x="18" y="148" fill="#9b59b6" font-size="10" font-weight="bold">PATCH</text>
+    <text x="54" y="148" fill="#cccccc" font-size="11">Partial Update Booking</text>
+    <text x="18" y="168" fill="#e74c3c" font-size="10" font-weight="bold">DEL</text>
+    <text x="54" y="168" fill="#cccccc" font-size="11">Delete Booking</text>
+
+    <text x="0" y="196" fill="#888888" font-size="11">📁 03 - Negative &amp; Edge Cases</text>
+    <text x="18" y="216" fill="#3498db" font-size="10" font-weight="bold">GET</text>
+    <text x="54" y="216" fill="#cccccc" font-size="11">Verify 404 Not Found</text>
+    <text x="18" y="236" fill="#f39c12" font-size="10" font-weight="bold">PUT</text>
+    <text x="54" y="236" fill="#cccccc" font-size="11">Negative Test 403 Forbidden</text>
+  </g>
+
+  <!-- Right Content Area: Environment Variables Modal/View -->
+  <rect x="260" y="40" width="740" height="560" fill="#1e1e1e"/>
+  
+  <g transform="translate(290, 70)">
+    <text x="0" y="0" fill="#ffffff" font-size="18" font-weight="bold">Manage Environments</text>
+    <text x="0" y="22" fill="#888888" font-size="12">Biến môi trường giúp lưu trữ và chia sẻ dữ liệu (Token, ID, Base URL) giữa các Request.</text>
+    
+    <!-- Environment Name Tag -->
+    <rect x="0" y="40" width="700" height="38" rx="4" fill="#2d2d30" stroke="#3e3e42"/>
+    <text x="16" y="64" fill="#ff6c37" font-size="13" font-weight="bold">Environment:</text>
+    <text x="110" y="64" fill="#ffffff" font-size="13">Restful Booker - Production Env</text>
+    <rect x="620" y="47" width="60" height="24" rx="3" fill="#ff6c37"/>
+    <text x="635" y="63" fill="#ffffff" font-size="11" font-weight="bold">Active</text>
+
+    <!-- Table Header -->
+    <rect x="0" y="95" width="700" height="30" fill="#252526"/>
+    <text x="16" y="115" fill="#aaaaaa" font-size="11" font-weight="bold">VARIABLE</text>
+    <text x="160" y="115" fill="#aaaaaa" font-size="11" font-weight="bold">TYPE</text>
+    <text x="240" y="115" fill="#aaaaaa" font-size="11" font-weight="bold">INITIAL VALUE</text>
+    <text x="470" y="115" fill="#aaaaaa" font-size="11" font-weight="bold">CURRENT VALUE</text>
+
+    <!-- Row 1: base_url -->
+    <rect x="0" y="126" width="700" height="36" fill="#1e1e1e" stroke="#2d2d30" stroke-width="0.5"/>
+    <text x="16" y="149" fill="#ff6c37" font-size="12" font-family="monospace" font-weight="bold">base_url</text>
+    <text x="160" y="149" fill="#888888" font-size="11">default</text>
+    <text x="240" y="149" fill="#cccccc" font-size="11" font-family="monospace">https://restful-booker.herokuapp.com</text>
+    <text x="470" y="149" fill="#2ecc71" font-size="11" font-family="monospace">https://restful-booker.herokuapp.com</text>
+
+    <!-- Row 2: token -->
+    <rect x="0" y="163" width="700" height="36" fill="#252526" stroke="#2d2d30" stroke-width="0.5"/>
+    <text x="16" y="186" fill="#ff6c37" font-size="12" font-family="monospace" font-weight="bold">token</text>
+    <text x="160" y="186" fill="#e67e22" font-size="11">secret</text>
+    <text x="240" y="186" fill="#666666" font-size="11" font-family="monospace">(empty)</text>
+    <text x="470" y="186" fill="#f1c40f" font-size="11" font-family="monospace">9a8f4c2e17d05ba6 (Dynamic Auto-set)</text>
+
+    <!-- Row 3: bookingId -->
+    <rect x="0" y="200" width="700" height="36" fill="#1e1e1e" stroke="#2d2d30" stroke-width="0.5"/>
+    <text x="16" y="223" fill="#ff6c37" font-size="12" font-family="monospace" font-weight="bold">bookingId</text>
+    <text x="160" y="223" fill="#888888" font-size="11">default</text>
+    <text x="240" y="223" fill="#666666" font-size="11" font-family="monospace">(empty)</text>
+    <text x="470" y="223" fill="#2ecc71" font-size="11" font-family="monospace">2418 (Auto-extracted from POST)</text>
+
+    <!-- Row 4: firstname -->
+    <rect x="0" y="237" width="700" height="36" fill="#252526" stroke="#2d2d30" stroke-width="0.5"/>
+    <text x="16" y="260" fill="#ff6c37" font-size="12" font-family="monospace" font-weight="bold">firstname</text>
+    <text x="160" y="260" fill="#888888" font-size="11">default</text>
+    <text x="240" y="260" fill="#cccccc" font-size="11" font-family="monospace">Alex</text>
+    <text x="470" y="260" fill="#cccccc" font-size="11" font-family="monospace">Alex</text>
+
+    <!-- Row 5: lastname -->
+    <rect x="0" y="274" width="700" height="36" fill="#1e1e1e" stroke="#2d2d30" stroke-width="0.5"/>
+    <text x="16" y="297" fill="#ff6c37" font-size="12" font-family="monospace" font-weight="bold">lastname</text>
+    <text x="160" y="297" fill="#888888" font-size="11">default</text>
+    <text x="240" y="297" fill="#cccccc" font-size="11" font-family="monospace">Miller</text>
+    <text x="470" y="297" fill="#cccccc" font-size="11" font-family="monospace">Miller</text>
+
+    <!-- Row 6: dynamic_price -->
+    <rect x="0" y="311" width="700" height="36" fill="#252526" stroke="#2d2d30" stroke-width="0.5"/>
+    <text x="16" y="334" fill="#ff6c37" font-size="12" font-family="monospace" font-weight="bold">dynamic_price</text>
+    <text x="160" y="334" fill="#888888" font-size="11">default</text>
+    <text x="240" y="334" fill="#cccccc" font-size="11" font-family="monospace">250</text>
+    <text x="470" y="334" fill="#3498db" font-size="11" font-family="monospace">385 (Calculated in Pre-request)</text>
+
+    <!-- Information Card Box -->
+    <rect x="0" y="370" width="700" height="85" rx="6" fill="#222b30" stroke="#007acc" stroke-width="1.2"/>
+    <text x="20" y="395" fill="#3498db" font-size="12" font-weight="bold">💡 Lưu ý quan trọng về API Chaining trong Postman:</text>
+    <text x="20" y="416" fill="#bbbbbb" font-size="11">• Biến <tspan fill="#ff6c37" font-family="monospace">token</tspan> và <tspan fill="#ff6c37" font-family="monospace">bookingId</tspan> sẽ được tự động gán giá trị thời gian thực thông qua hàm <tspan fill="#2ecc71" font-family="monospace">pm.environment.set()</tspan>.</text>
+    <text x="20" y="435" fill="#bbbbbb" font-size="11">• Khi các request sau thực thi, cú pháp <tspan fill="#ff6c37" font-family="monospace">{{token}}</tspan> và <tspan fill="#ff6c37" font-family="monospace">{{bookingId}}</tspan> sẽ tự động điền dữ liệu tương ứng.</text>
+  </g>
+</svg>

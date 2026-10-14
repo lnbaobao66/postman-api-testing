@@ -1,0 +1,23 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "totalprice": 150,
+    "depositpaid": true,
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "firstname": "Emily",
+    "lastname": "Smith",
+    "totalprice": 320,
+    "depositpaid": false,
+    "additionalneeds": "Late Checkout"
+  },
+  {
+    "firstname": "Michael",
+    "lastname": "Brown",
+    "totalprice": 450,
+    "depositpaid": true,
+    "additionalneeds": "Airport Shuttle"
+  }
+]
